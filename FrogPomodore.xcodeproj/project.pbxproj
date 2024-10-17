@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E47F6C30865035ED999A52 /* Pods_FrogPomodore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5727AC1DBBF2CF8D28B65AB4 /* Pods_FrogPomodore.framework */; };
 		18D8CFB92CC1230C00CD88DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFB82CC1230C00CD88DF /* AppDelegate.swift */; };
 		18D8CFBB2CC1230C00CD88DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFBA2CC1230C00CD88DF /* SceneDelegate.swift */; };
-		18D8CFBD2CC1230C00CD88DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFBC2CC1230C00CD88DF /* ViewController.swift */; };
-		18D8CFC02CC1230C00CD88DF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 18D8CFBF2CC1230C00CD88DF /* Base */; };
+		18D8CFBD2CC1230C00CD88DF /* PomodoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFBC2CC1230C00CD88DF /* PomodoreViewController.swift */; };
 		18D8CFC22CC1230E00CD88DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D8CFC12CC1230E00CD88DF /* Assets.xcassets */; };
 		18D8CFC52CC1230E00CD88DF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 18D8CFC42CC1230E00CD88DF /* Base */; };
 		18D8CFD02CC1230E00CD88DF /* FrogPomodoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFCF2CC1230E00CD88DF /* FrogPomodoreTests.swift */; };
 		18D8CFDA2CC1230E00CD88DF /* FrogPomodoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFD92CC1230E00CD88DF /* FrogPomodoreUITests.swift */; };
 		18D8CFDC2CC1230E00CD88DF /* FrogPomodoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFDB2CC1230E00CD88DF /* FrogPomodoreUITestsLaunchTests.swift */; };
+		18E9417F2CC12A0C00D305A1 /* PomodoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9417E2CC12A0C00D305A1 /* PomodoreView.swift */; };
+		7DE78D7D4F53D05669D89FF0 /* Pods_FrogPomodoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EB521EB419D591EEBA73F1 /* Pods_FrogPomodoreTests.framework */; };
+		FD89CBF0D3073E0F95DBBD77 /* Pods_FrogPomodore_FrogPomodoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB367A5AE007AB8969D25C56 /* Pods_FrogPomodore_FrogPomodoreUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05DB72EAC36A4D19077F1FD9 /* Pods-FrogPomodore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogPomodore.debug.xcconfig"; path = "Target Support Files/Pods-FrogPomodore/Pods-FrogPomodore.debug.xcconfig"; sourceTree = "<group>"; };
 		18D8CFB52CC1230C00CD88DF /* FrogPomodore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrogPomodore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D8CFB82CC1230C00CD88DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D8CFBA2CC1230C00CD88DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18D8CFBC2CC1230C00CD88DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18D8CFBF2CC1230C00CD88DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18D8CFBC2CC1230C00CD88DF /* PomodoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoreViewController.swift; sourceTree = "<group>"; };
 		18D8CFC12CC1230E00CD88DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D8CFC42CC1230E00CD88DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D8CFC62CC1230E00CD88DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,15 @@
 		18D8CFD52CC1230E00CD88DF /* FrogPomodoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogPomodoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D8CFD92CC1230E00CD88DF /* FrogPomodoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogPomodoreUITests.swift; sourceTree = "<group>"; };
 		18D8CFDB2CC1230E00CD88DF /* FrogPomodoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogPomodoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18E9417E2CC12A0C00D305A1 /* PomodoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoreView.swift; sourceTree = "<group>"; };
+		3DC52E1847EC9C172E247508 /* Pods-FrogPomodore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogPomodore.release.xcconfig"; path = "Target Support Files/Pods-FrogPomodore/Pods-FrogPomodore.release.xcconfig"; sourceTree = "<group>"; };
+		52EB521EB419D591EEBA73F1 /* Pods_FrogPomodoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrogPomodoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54590EAAD388DBBC475EC6EB /* Pods-FrogPomodore-FrogPomodoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogPomodore-FrogPomodoreUITests.release.xcconfig"; path = "Target Support Files/Pods-FrogPomodore-FrogPomodoreUITests/Pods-FrogPomodore-FrogPomodoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5727AC1DBBF2CF8D28B65AB4 /* Pods_FrogPomodore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrogPomodore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6826F8692207FB1793B8D6C5 /* Pods-FrogPomodoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogPomodoreTests.debug.xcconfig"; path = "Target Support Files/Pods-FrogPomodoreTests/Pods-FrogPomodoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC6B8E661419EDF651BC04B9 /* Pods-FrogPomodore-FrogPomodoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogPomodore-FrogPomodoreUITests.debug.xcconfig"; path = "Target Support Files/Pods-FrogPomodore-FrogPomodoreUITests/Pods-FrogPomodore-FrogPomodoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBFD999A821CC62F5ECEA49D /* Pods-FrogPomodoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogPomodoreTests.release.xcconfig"; path = "Target Support Files/Pods-FrogPomodoreTests/Pods-FrogPomodoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB367A5AE007AB8969D25C56 /* Pods_FrogPomodore_FrogPomodoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrogPomodore_FrogPomodoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E47F6C30865035ED999A52 /* Pods_FrogPomodore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE78D7D4F53D05669D89FF0 /* Pods_FrogPomodoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD89CBF0D3073E0F95DBBD77 /* Pods_FrogPomodore_FrogPomodoreUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				18D8CFCE2CC1230E00CD88DF /* FrogPomodoreTests */,
 				18D8CFD82CC1230E00CD88DF /* FrogPomodoreUITests */,
 				18D8CFB62CC1230C00CD88DF /* Products */,
+				D5C2276D91910562BAB1982C /* Pods */,
+				BC50CFFF069645E6D0161FDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +118,11 @@
 			children = (
 				18D8CFB82CC1230C00CD88DF /* AppDelegate.swift */,
 				18D8CFBA2CC1230C00CD88DF /* SceneDelegate.swift */,
-				18D8CFBC2CC1230C00CD88DF /* ViewController.swift */,
-				18D8CFBE2CC1230C00CD88DF /* Main.storyboard */,
+				18D8CFBC2CC1230C00CD88DF /* PomodoreViewController.swift */,
 				18D8CFC12CC1230E00CD88DF /* Assets.xcassets */,
 				18D8CFC32CC1230E00CD88DF /* LaunchScreen.storyboard */,
 				18D8CFC62CC1230E00CD88DF /* Info.plist */,
+				18E9417E2CC12A0C00D305A1 /* PomodoreView.swift */,
 			);
 			path = FrogPomodore;
 			sourceTree = "<group>";
@@ -127,6 +144,29 @@
 			path = FrogPomodoreUITests;
 			sourceTree = "<group>";
 		};
+		BC50CFFF069645E6D0161FDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5727AC1DBBF2CF8D28B65AB4 /* Pods_FrogPomodore.framework */,
+				EB367A5AE007AB8969D25C56 /* Pods_FrogPomodore_FrogPomodoreUITests.framework */,
+				52EB521EB419D591EEBA73F1 /* Pods_FrogPomodoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5C2276D91910562BAB1982C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05DB72EAC36A4D19077F1FD9 /* Pods-FrogPomodore.debug.xcconfig */,
+				3DC52E1847EC9C172E247508 /* Pods-FrogPomodore.release.xcconfig */,
+				AC6B8E661419EDF651BC04B9 /* Pods-FrogPomodore-FrogPomodoreUITests.debug.xcconfig */,
+				54590EAAD388DBBC475EC6EB /* Pods-FrogPomodore-FrogPomodoreUITests.release.xcconfig */,
+				6826F8692207FB1793B8D6C5 /* Pods-FrogPomodoreTests.debug.xcconfig */,
+				DBFD999A821CC62F5ECEA49D /* Pods-FrogPomodoreTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +174,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D8CFDF2CC1230E00CD88DF /* Build configuration list for PBXNativeTarget "FrogPomodore" */;
 			buildPhases = (
+				AC679F83CEE8EE2E9936D782 /* [CP] Check Pods Manifest.lock */,
 				18D8CFB12CC1230C00CD88DF /* Sources */,
 				18D8CFB22CC1230C00CD88DF /* Frameworks */,
 				18D8CFB32CC1230C00CD88DF /* Resources */,
@@ -151,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D8CFE22CC1230E00CD88DF /* Build configuration list for PBXNativeTarget "FrogPomodoreTests" */;
 			buildPhases = (
+				E99929A497A36690D371344D /* [CP] Check Pods Manifest.lock */,
 				18D8CFC72CC1230E00CD88DF /* Sources */,
 				18D8CFC82CC1230E00CD88DF /* Frameworks */,
 				18D8CFC92CC1230E00CD88DF /* Resources */,
@@ -169,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D8CFE52CC1230E00CD88DF /* Build configuration list for PBXNativeTarget "FrogPomodoreUITests" */;
 			buildPhases = (
+				08363209F93914FFB0FEB8AF /* [CP] Check Pods Manifest.lock */,
 				18D8CFD12CC1230E00CD88DF /* Sources */,
 				18D8CFD22CC1230E00CD88DF /* Frameworks */,
 				18D8CFD32CC1230E00CD88DF /* Resources */,
@@ -233,7 +276,6 @@
 			files = (
 				18D8CFC22CC1230E00CD88DF /* Assets.xcassets in Resources */,
 				18D8CFC52CC1230E00CD88DF /* Base in Resources */,
-				18D8CFC02CC1230C00CD88DF /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +295,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08363209F93914FFB0FEB8AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrogPomodore-FrogPomodoreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC679F83CEE8EE2E9936D782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrogPomodore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E99929A497A36690D371344D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrogPomodoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18D8CFB12CC1230C00CD88DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D8CFBD2CC1230C00CD88DF /* ViewController.swift in Sources */,
+				18D8CFBD2CC1230C00CD88DF /* PomodoreViewController.swift in Sources */,
+				18E9417F2CC12A0C00D305A1 /* PomodoreView.swift in Sources */,
 				18D8CFB92CC1230C00CD88DF /* AppDelegate.swift in Sources */,
 				18D8CFBB2CC1230C00CD88DF /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		18D8CFBE2CC1230C00CD88DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18D8CFBF2CC1230C00CD88DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18D8CFC32CC1230E00CD88DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,6 +541,7 @@
 		};
 		18D8CFE02CC1230E00CD88DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05DB72EAC36A4D19077F1FD9 /* Pods-FrogPomodore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,7 +552,6 @@
 				INFOPLIST_FILE = FrogPomodore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,6 +569,7 @@
 		};
 		18D8CFE12CC1230E00CD88DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DC52E1847EC9C172E247508 /* Pods-FrogPomodore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,7 +580,6 @@
 				INFOPLIST_FILE = FrogPomodore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,6 +597,7 @@
 		};
 		18D8CFE32CC1230E00CD88DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6826F8692207FB1793B8D6C5 /* Pods-FrogPomodoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +618,7 @@
 		};
 		18D8CFE42CC1230E00CD88DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFD999A821CC62F5ECEA49D /* Pods-FrogPomodoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +639,7 @@
 		};
 		18D8CFE62CC1230E00CD88DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6B8E661419EDF651BC04B9 /* Pods-FrogPomodore-FrogPomodoreUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +658,7 @@
 		};
 		18D8CFE72CC1230E00CD88DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54590EAAD388DBBC475EC6EB /* Pods-FrogPomodore-FrogPomodoreUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

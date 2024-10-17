@@ -1,0 +1,6 @@
+framework module Pods_FrogPomodore_FrogPomodoreUITests {
+  umbrella header "Pods-FrogPomodore-FrogPomodoreUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
