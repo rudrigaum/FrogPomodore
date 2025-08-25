@@ -1,0 +1,43 @@
+# Xcode
+#
+.DS_Store
+xcuserdata/
+DerivedData/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+*/xcshareddata/
+*/xcuserdata/
+
+# Swift
+#
+*.o
+*.swiftdoc
+*.swiftmodule
+*.swiftsourceinfo
+*.d
+*.dia
+*.smap
+
+# Build products
+#
+build/
+*.build/
+*.hmap
+*.framework
+*.a
+
+# CocoaPods
+#
+Pods/
+.symlinks
+Podfile.lock
+
+# Carthage
+#
+Carthage/
+
+# Swift Package Manager
+#
+.swiftpm/
