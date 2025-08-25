@@ -3,16 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 74;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		09E47F6C30865035ED999A52 /* Pods_FrogPomodore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5727AC1DBBF2CF8D28B65AB4 /* Pods_FrogPomodore.framework */; };
-		18D8CFB92CC1230C00CD88DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFB82CC1230C00CD88DF /* AppDelegate.swift */; };
-		18D8CFBB2CC1230C00CD88DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFBA2CC1230C00CD88DF /* SceneDelegate.swift */; };
 		18D8CFBD2CC1230C00CD88DF /* PomodoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFBC2CC1230C00CD88DF /* PomodoreViewController.swift */; };
 		18D8CFC22CC1230E00CD88DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D8CFC12CC1230E00CD88DF /* Assets.xcassets */; };
-		18D8CFC52CC1230E00CD88DF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 18D8CFC42CC1230E00CD88DF /* Base */; };
 		18D8CFD02CC1230E00CD88DF /* FrogPomodoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFCF2CC1230E00CD88DF /* FrogPomodoreTests.swift */; };
 		18D8CFDA2CC1230E00CD88DF /* FrogPomodoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFD92CC1230E00CD88DF /* FrogPomodoreUITests.swift */; };
 		18D8CFDC2CC1230E00CD88DF /* FrogPomodoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFDB2CC1230E00CD88DF /* FrogPomodoreUITestsLaunchTests.swift */; };
@@ -41,11 +38,8 @@
 /* Begin PBXFileReference section */
 		05DB72EAC36A4D19077F1FD9 /* Pods-FrogPomodore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogPomodore.debug.xcconfig"; path = "Target Support Files/Pods-FrogPomodore/Pods-FrogPomodore.debug.xcconfig"; sourceTree = "<group>"; };
 		18D8CFB52CC1230C00CD88DF /* FrogPomodore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrogPomodore.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18D8CFB82CC1230C00CD88DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18D8CFBA2CC1230C00CD88DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18D8CFBC2CC1230C00CD88DF /* PomodoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoreViewController.swift; sourceTree = "<group>"; };
 		18D8CFC12CC1230E00CD88DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18D8CFC42CC1230E00CD88DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D8CFC62CC1230E00CD88DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D8CFCB2CC1230E00CD88DF /* FrogPomodoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogPomodoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D8CFCF2CC1230E00CD88DF /* FrogPomodoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogPomodoreTests.swift; sourceTree = "<group>"; };
@@ -62,6 +56,32 @@
 		DBFD999A821CC62F5ECEA49D /* Pods-FrogPomodoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogPomodoreTests.release.xcconfig"; path = "Target Support Files/Pods-FrogPomodoreTests/Pods-FrogPomodoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB367A5AE007AB8969D25C56 /* Pods_FrogPomodore_FrogPomodoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrogPomodore_FrogPomodoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		18B82F882E5CFFE700AF9349 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				/Localized/LaunchScreen.storyboard,
+			);
+			target = 18D8CFB42CC1230C00CD88DF /* FrogPomodore */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		18B82F892E5CFFE700AF9349 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 18D8CFB32CC1230C00CD88DF /* Resources */;
+			membershipExceptions = (
+				Base.lproj/LaunchScreen.storyboard,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		18B82F872E5CFFD600AF9349 /* App */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (18B82F882E5CFFE700AF9349 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 18B82F892E5CFFE700AF9349 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = App; sourceTree = "<group>"; };
+		18B82F8B2E5D000200AF9349 /* Presentation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Presentation; sourceTree = "<group>"; };
+		18B82F932E5D00B500AF9349 /* Domain */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Domain; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18D8CFB22CC1230C00CD88DF /* Frameworks */ = {
@@ -116,13 +136,13 @@
 		18D8CFB72CC1230C00CD88DF /* FrogPomodore */ = {
 			isa = PBXGroup;
 			children = (
-				18D8CFB82CC1230C00CD88DF /* AppDelegate.swift */,
-				18D8CFBA2CC1230C00CD88DF /* SceneDelegate.swift */,
+				18B82F8B2E5D000200AF9349 /* Presentation */,
+				18B82F872E5CFFD600AF9349 /* App */,
 				18D8CFBC2CC1230C00CD88DF /* PomodoreViewController.swift */,
 				18D8CFC12CC1230E00CD88DF /* Assets.xcassets */,
-				18D8CFC32CC1230E00CD88DF /* LaunchScreen.storyboard */,
 				18D8CFC62CC1230E00CD88DF /* Info.plist */,
 				18E9417E2CC12A0C00D305A1 /* PomodoreView.swift */,
+				18B82F932E5D00B500AF9349 /* Domain */,
 			);
 			path = FrogPomodore;
 			sourceTree = "<group>";
@@ -182,6 +202,11 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				18B82F872E5CFFD600AF9349 /* App */,
+				18B82F8B2E5D000200AF9349 /* Presentation */,
+				18B82F932E5D00B500AF9349 /* Domain */,
 			);
 			name = FrogPomodore;
 			productName = FrogPomodore;
@@ -250,7 +275,6 @@
 				};
 			};
 			buildConfigurationList = 18D8CFB02CC1230C00CD88DF /* Build configuration list for PBXProject "FrogPomodore" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -258,6 +282,7 @@
 				Base,
 			);
 			mainGroup = 18D8CFAC2CC1230C00CD88DF;
+			preferredProjectObjectVersion = 56;
 			productRefGroup = 18D8CFB62CC1230C00CD88DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,7 +300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D8CFC22CC1230E00CD88DF /* Assets.xcassets in Resources */,
-				18D8CFC52CC1230E00CD88DF /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,8 +395,6 @@
 			files = (
 				18D8CFBD2CC1230C00CD88DF /* PomodoreViewController.swift in Sources */,
 				18E9417F2CC12A0C00D305A1 /* PomodoreView.swift in Sources */,
-				18D8CFB92CC1230C00CD88DF /* AppDelegate.swift in Sources */,
-				18D8CFBB2CC1230C00CD88DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,17 +429,6 @@
 			targetProxy = 18D8CFD62CC1230E00CD88DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		18D8CFC32CC1230E00CD88DF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18D8CFC42CC1230E00CD88DF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		18D8CFDD2CC1230E00CD88DF /* Debug */ = {
