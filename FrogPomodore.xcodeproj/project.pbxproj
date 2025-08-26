@@ -81,6 +81,7 @@
 		18B82F872E5CFFD600AF9349 /* App */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (18B82F882E5CFFE700AF9349 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 18B82F892E5CFFE700AF9349 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = App; sourceTree = "<group>"; };
 		18B82F8B2E5D000200AF9349 /* Presentation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Presentation; sourceTree = "<group>"; };
 		18B82F932E5D00B500AF9349 /* Domain */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Domain; sourceTree = "<group>"; };
+		18B82F9B2E5D031500AF9349 /* DomainTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DomainTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +151,7 @@
 		18D8CFCE2CC1230E00CD88DF /* FrogPomodoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				18B82F9B2E5D031500AF9349 /* DomainTests */,
 				18D8CFCF2CC1230E00CD88DF /* FrogPomodoreTests.swift */,
 			);
 			path = FrogPomodoreTests;
@@ -226,6 +228,9 @@
 			);
 			dependencies = (
 				18D8CFCD2CC1230E00CD88DF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				18B82F9B2E5D031500AF9349 /* DomainTests */,
 			);
 			name = FrogPomodoreTests;
 			productName = FrogPomodoreTests;
