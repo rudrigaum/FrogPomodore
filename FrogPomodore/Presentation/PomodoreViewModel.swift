@@ -1,5 +1,5 @@
 //
-//  PomodoroViewModel.swift
+//  PomodoreViewModel.swift
 //  FrogPomodore
 //
 //  Created by Rodrigo Cerqueira Reis on 27/08/25.
@@ -26,7 +26,7 @@ protocol PomodoroViewModelProtocol {
 }
 
 // MARK: - Implementation
-class PomodoroViewModel: PomodoroViewModelProtocol {
+class PomodoreViewModel: PomodoroViewModelProtocol {
     
     private var timerService: PomodoroTimerService
     
