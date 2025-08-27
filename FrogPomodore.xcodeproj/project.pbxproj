@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18D8CFBD2CC1230C00CD88DF /* PomodoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFBC2CC1230C00CD88DF /* PomodoreViewController.swift */; };
 		18D8CFC22CC1230E00CD88DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D8CFC12CC1230E00CD88DF /* Assets.xcassets */; };
 		18D8CFD02CC1230E00CD88DF /* FrogPomodoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFCF2CC1230E00CD88DF /* FrogPomodoreTests.swift */; };
 		18D8CFDA2CC1230E00CD88DF /* FrogPomodoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFD92CC1230E00CD88DF /* FrogPomodoreUITests.swift */; };
 		18D8CFDC2CC1230E00CD88DF /* FrogPomodoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8CFDB2CC1230E00CD88DF /* FrogPomodoreUITestsLaunchTests.swift */; };
-		18E9417F2CC12A0C00D305A1 /* PomodoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9417E2CC12A0C00D305A1 /* PomodoreView.swift */; };
 		7DE78D7D4F53D05669D89FF0 /* Pods_FrogPomodoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EB521EB419D591EEBA73F1 /* Pods_FrogPomodoreTests.framework */; };
 		FD89CBF0D3073E0F95DBBD77 /* Pods_FrogPomodore_FrogPomodoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB367A5AE007AB8969D25C56 /* Pods_FrogPomodore_FrogPomodoreUITests.framework */; };
 /* End PBXBuildFile section */
@@ -36,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		18D8CFB52CC1230C00CD88DF /* FrogPomodore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrogPomodore.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18D8CFBC2CC1230C00CD88DF /* PomodoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoreViewController.swift; sourceTree = "<group>"; };
 		18D8CFC12CC1230E00CD88DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D8CFC62CC1230E00CD88DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D8CFCB2CC1230E00CD88DF /* FrogPomodoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogPomodoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +41,6 @@
 		18D8CFD52CC1230E00CD88DF /* FrogPomodoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogPomodoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D8CFD92CC1230E00CD88DF /* FrogPomodoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogPomodoreUITests.swift; sourceTree = "<group>"; };
 		18D8CFDB2CC1230E00CD88DF /* FrogPomodoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogPomodoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		18E9417E2CC12A0C00D305A1 /* PomodoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoreView.swift; sourceTree = "<group>"; };
 		52EB521EB419D591EEBA73F1 /* Pods_FrogPomodoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrogPomodoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5727AC1DBBF2CF8D28B65AB4 /* Pods_FrogPomodore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrogPomodore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB367A5AE007AB8969D25C56 /* Pods_FrogPomodore_FrogPomodoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrogPomodore_FrogPomodoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,10 +126,8 @@
 			children = (
 				18B82F8B2E5D000200AF9349 /* Presentation */,
 				18B82F872E5CFFD600AF9349 /* App */,
-				18D8CFBC2CC1230C00CD88DF /* PomodoreViewController.swift */,
 				18D8CFC12CC1230E00CD88DF /* Assets.xcassets */,
 				18D8CFC62CC1230E00CD88DF /* Info.plist */,
-				18E9417E2CC12A0C00D305A1 /* PomodoreView.swift */,
 				18B82F932E5D00B500AF9349 /* Domain */,
 			);
 			path = FrogPomodore;
@@ -353,8 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D8CFBD2CC1230C00CD88DF /* PomodoreViewController.swift in Sources */,
-				18E9417F2CC12A0C00D305A1 /* PomodoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
