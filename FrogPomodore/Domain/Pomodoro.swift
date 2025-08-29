@@ -17,4 +17,5 @@ struct Pomodoro {
     let phase: PomodoroPhase
     let remainingTimeInSeconds: TimeInterval
     let completedWorkCycles: Int
+    var isTimerRunning: Bool
 }

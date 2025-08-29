@@ -8,6 +8,9 @@
 import Foundation
 
 protocol PomodoroTimerService {
+    
+    var pomodoro: Pomodoro { get }
+    
     var onTimerUpdate: ((Pomodoro) -> Void)? { get set }
     var onPhaseChange: ((Pomodoro) -> Void)? { get set }
     

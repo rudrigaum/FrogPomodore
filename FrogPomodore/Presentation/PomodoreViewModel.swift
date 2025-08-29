@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - View State
 struct PomodoroViewState {
     let timerText: String
     let buttonTitle: String
@@ -15,7 +14,6 @@ struct PomodoroViewState {
     let isTimerRunning: Bool
 }
 
-// MARK: - Protocol
 protocol PomodoroViewModelProtocol {
     var onStateChange: ((PomodoroViewState) -> Void)? { get set }
     
@@ -25,8 +23,7 @@ protocol PomodoroViewModelProtocol {
     func resetButtonTapped()
 }
 
-// MARK: - Implementation
-class PomodoreViewModel: PomodoroViewModelProtocol {
+class PomodoroViewModel: PomodoroViewModelProtocol {
     
     private var timerService: PomodoroTimerService
     
@@ -36,36 +33,37 @@ class PomodoreViewModel: PomodoroViewModelProtocol {
         self.timerService = timerService
     }
     
-    // MARK: - Métodos para a View
     
     func viewDidLoad() {
+
         timerService.onTimerUpdate = { [weak self] pomodoro in
             self?.updateState(with: pomodoro)
         }
         
-        updateState(with: Pomodoro(phase: .work, remainingTimeInSeconds: 25 * 60, completedWorkCycles: 0))
+        updateState(with: Pomodoro(phase: .work, remainingTimeInSeconds: 25 * 60, completedWorkCycles: 0, isTimerRunning: false))
     }
     
     func startButtonTapped() {
         timerService.start()
+        updateState(with: timerService.pomodoro)
     }
     
     func pauseButtonTapped() {
         timerService.pause()
+        updateState(with: timerService.pomodoro)
     }
     
     func resetButtonTapped() {
         timerService.reset()
+        updateState(with: timerService.pomodoro)
     }
-    
-    // MARK: - Private Logic
     
     private func updateState(with pomodoro: Pomodoro) {
         let viewState = PomodoroViewState(
             timerText: formatTime(pomodoro.remainingTimeInSeconds),
-            buttonTitle: "Pause",
-            phaseTitle: pomodoro.phase == .work ? "Work" : "Pause",
-            isTimerRunning: true
+            buttonTitle: pomodoro.isTimerRunning ? "Pause" : "Start",
+            phaseTitle: pomodoro.phase.title,
+            isTimerRunning: pomodoro.isTimerRunning
         )
         onStateChange?(viewState)
     }
@@ -74,5 +72,18 @@ class PomodoreViewModel: PomodoroViewModelProtocol {
         let minutes = Int(time) / 60
         let seconds = Int(time) % 60
         return String(format: "%02d:%02d", minutes, seconds)
+    }
+}
+
+extension PomodoroPhase {
+    var title: String {
+        switch self {
+        case .work:
+            return "Work"
+        case .shortBreak:
+            return "Short Break"
+        case .longBreak:
+            return "Long Break"
+        }
     }
 }

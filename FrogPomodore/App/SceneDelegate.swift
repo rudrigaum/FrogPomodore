@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let pomodoroTimer = PomodoroTimer()
         
-        let pomodoroViewModel = PomodoreViewModel(timerService: pomodoroTimer)
+        let pomodoroViewModel = PomodoroViewModel(timerService: pomodoroTimer)
         
         let pomodoroViewController = PomodoreViewController(viewModel: pomodoroViewModel)
         
