@@ -7,11 +7,18 @@
 
 import Foundation
 
+struct PomodoroButtonState {
+    let title: String
+    let isHidden: Bool
+}
+
 struct PomodoroViewState {
     let timerText: String
-    let buttonTitle: String
     let phaseTitle: String
     let isTimerRunning: Bool
+    let startButton: PomodoroButtonState
+    let pauseButton: PomodoroButtonState
+    let resetButton: PomodoroButtonState
 }
 
 protocol PomodoroViewModelProtocol {
@@ -61,9 +68,10 @@ class PomodoroViewModel: PomodoroViewModelProtocol {
     private func updateState(with pomodoro: Pomodoro) {
         let viewState = PomodoroViewState(
             timerText: formatTime(pomodoro.remainingTimeInSeconds),
-            buttonTitle: pomodoro.isTimerRunning ? "Pause" : "Start",
-            phaseTitle: pomodoro.phase.title,
-            isTimerRunning: pomodoro.isTimerRunning
+            phaseTitle: pomodoro.phase.title, isTimerRunning: false,
+            startButton: PomodoroButtonState(title: "Start", isHidden: pomodoro.isTimerRunning),
+            pauseButton: PomodoroButtonState(title: "Pause", isHidden: !pomodoro.isTimerRunning),
+            resetButton: PomodoroButtonState(title: "Restart", isHidden: false)
         )
         onStateChange?(viewState)
     }

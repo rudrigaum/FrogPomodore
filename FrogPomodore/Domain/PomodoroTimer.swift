@@ -14,6 +14,7 @@ class PomodoroTimer: PomodoroTimerService {
     var onPhaseChange: ((Pomodoro) -> Void)?
     var isRunning: Bool = false
     
+    private var internalRemainingTime: TimeInterval
     private var timer: Timer?
     private var currentPhase: PomodoroPhase = .work
     private var timeRemainingInSeconds: TimeInterval = 25 * 60
@@ -23,36 +24,50 @@ class PomodoroTimer: PomodoroTimerService {
     private let longBreakDuration: TimeInterval = 15 * 60
     
     init() {
+        self.internalRemainingTime = 25 * 60
         self.pomodoro = Pomodoro(
             phase: .work,
-            remainingTimeInSeconds: 25 * 60,
+            remainingTimeInSeconds: self.internalRemainingTime,
             completedWorkCycles: 0,
             isTimerRunning: false
         )
     }
     
     func start() {
-        guard !isRunning else { return }
-        isRunning = true
+        guard timer == nil else { return }
         
         self.pomodoro = Pomodoro(
             phase: self.pomodoro.phase,
-            remainingTimeInSeconds: self.pomodoro.remainingTimeInSeconds,
+            remainingTimeInSeconds: self.internalRemainingTime,
             completedWorkCycles: self.pomodoro.completedWorkCycles,
             isTimerRunning: isRunning
         )
         
+        onTimerUpdate?(self.pomodoro)
+        
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
-            self?.updateTimer()
-        }
+             guard let self = self else { return }
+
+             self.internalRemainingTime -= 1
+
+             self.pomodoro = Pomodoro(
+                 phase: self.pomodoro.phase,
+                 remainingTimeInSeconds: self.internalRemainingTime,
+                 completedWorkCycles: self.pomodoro.completedWorkCycles,
+                 isTimerRunning: true
+             )
+
+             self.onTimerUpdate?(self.pomodoro)
+         }
     }
     
     func pause() {
-        isRunning = false
+        timer?.invalidate()
+        timer = nil
         
         self.pomodoro = Pomodoro(
             phase: self.pomodoro.phase,
-            remainingTimeInSeconds: self.pomodoro.remainingTimeInSeconds,
+            remainingTimeInSeconds:  self.internalRemainingTime,
             completedWorkCycles: self.pomodoro.completedWorkCycles,
             isTimerRunning: isRunning
         )
@@ -62,20 +77,18 @@ class PomodoroTimer: PomodoroTimerService {
     }
     
     func reset() {
-        isRunning = false
+        timer?.invalidate()
+        timer = nil
+        
+        self.internalRemainingTime = 25 * 60
         
         self.pomodoro = Pomodoro(
-            phase: self.pomodoro.phase,
-            remainingTimeInSeconds: 25 * 60,
+            phase: .work,
+            remainingTimeInSeconds: self.internalRemainingTime,
             completedWorkCycles: 0,
-            isTimerRunning: isRunning
+            isTimerRunning: false
         )
-        
-        pause()
-        currentPhase = .work
-        timeRemainingInSeconds = workDuration
-        completedWorkCycles = 0
-        notifyUpdate()
+        onTimerUpdate?(self.pomodoro)
     }
     
     private func updateTimer() {

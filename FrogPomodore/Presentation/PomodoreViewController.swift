@@ -40,12 +40,15 @@ class PomodoreViewController: UIViewController, PomodoroViewDelegate {
         viewModel.viewDidLoad()
     }
     
-    // MARK: - PomodoroViewDelegate
-    func didTapActionButton() {
-        if pomodoreView.actionButton.title(for: .normal) == "Pause" {
-            viewModel.pauseButtonTapped()
-        } else {
-            viewModel.startButtonTapped()
-        }
+    func didTapStartButton() {
+        viewModel.startButtonTapped()
+    }
+    
+    func didTapPauseButton() {
+        viewModel.pauseButtonTapped()
+    }
+    
+    func didTapResetButton() {
+        viewModel.resetButtonTapped()
     }
 }

@@ -8,23 +8,21 @@
 import Foundation
 import UIKit
 
-// MARK: - Protocol for View
 protocol PomodoroViewProtocol: UIView {
     var delegate: PomodoroViewDelegate? { get set }
     func update(with viewState: PomodoroViewState)
 }
 
-// MARK: - Delegate
 protocol PomodoroViewDelegate: AnyObject {
-    func didTapActionButton()
+    func didTapStartButton()
+    func didTapPauseButton()
+    func didTapResetButton()
 }
 
 class PomodoreView: UIView, PomodoroViewProtocol {
-    
-    // MARK: - Properties
+
     weak var delegate: PomodoroViewDelegate?
-    
-    // MARK: - UI Components
+
     lazy var timeLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -33,7 +31,7 @@ class PomodoreView: UIView, PomodoroViewProtocol {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     lazy var phaseLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -42,60 +40,104 @@ class PomodoreView: UIView, PomodoroViewProtocol {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-
-    lazy var actionButton: UIButton = {
+    
+    lazy var startButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemBlue
+        button.backgroundColor = .systemGreen
         button.layer.cornerRadius = 25
-        button.addTarget(self, action: #selector(didTapActionButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapStartButton), for: .touchUpInside)
+        return button
+    }()
+
+    lazy var pauseButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .systemYellow
+        button.layer.cornerRadius = 25
+        button.addTarget(self, action: #selector(didTapPauseButton), for: .touchUpInside)
         return button
     }()
     
-    // MARK: - Initializers
+    lazy var resetButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .systemRed
+        button.layer.cornerRadius = 25
+        button.addTarget(self, action: #selector(didTapResetButton), for: .touchUpInside)
+        return button
+    }()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
         setupConstraints()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    // MARK: - Actions
-    @objc private func didTapActionButton() {
-        delegate?.didTapActionButton()
+
+    @objc private func didTapStartButton() {
+        delegate?.didTapStartButton()
+    }
+
+    @objc private func didTapPauseButton() {
+        delegate?.didTapPauseButton()
     }
     
-    // MARK: - UI Update Methods
+    @objc private func didTapResetButton() {
+        delegate?.didTapResetButton()
+    }
+
     func update(with viewState: PomodoroViewState) {
         timeLabel.text = viewState.timerText
         phaseLabel.text = viewState.phaseTitle
-        actionButton.setTitle(viewState.buttonTitle, for: .normal)
+        
+        startButton.isHidden = viewState.startButton.isHidden
+        startButton.setTitle(viewState.startButton.title, for: .normal)
+        
+        pauseButton.isHidden = viewState.pauseButton.isHidden
+        pauseButton.setTitle(viewState.pauseButton.title, for: .normal)
+        
+        resetButton.isHidden = viewState.resetButton.isHidden
+        resetButton.setTitle(viewState.resetButton.title, for: .normal)
     }
-    
-    // MARK: - UI Setup
+
     private func setupView() {
         backgroundColor = .black
         addSubview(timeLabel)
         addSubview(phaseLabel)
-        addSubview(actionButton)
+        addSubview(startButton)
+        addSubview(pauseButton)
+        addSubview(resetButton)
     }
-    
+
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             timeLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             timeLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -50),
-            
+
             phaseLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             phaseLabel.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 12),
+
+            startButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            startButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50),
+            startButton.widthAnchor.constraint(equalToConstant: 150),
+            startButton.heightAnchor.constraint(equalToConstant: 50),
+
+            pauseButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            pauseButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50),
+            pauseButton.widthAnchor.constraint(equalToConstant: 150),
+            pauseButton.heightAnchor.constraint(equalToConstant: 50),
             
-            actionButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            actionButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -50),
-            actionButton.widthAnchor.constraint(equalToConstant: 150),
-            actionButton.heightAnchor.constraint(equalToConstant: 50)
+            resetButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            resetButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -120),
+            resetButton.widthAnchor.constraint(equalToConstant: 150),
+            resetButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 }
