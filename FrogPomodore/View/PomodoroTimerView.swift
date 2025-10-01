@@ -6,30 +6,29 @@
 //
 
 import SwiftUI
-
 struct PomodoroTimerView: View {
     
-    // MARK: - State Properties
-    @State private var timeRemaining: String = "25:00"
-    @State private var isTimerRunning: Bool = false
+    // MARK: - Properties
+    @StateObject private var viewModel = PomodoroTimerViewModel()
     
     // MARK: - Body
     var body: some View {
         VStack(spacing: 40) {
             Text("🐸")
                 .font(.system(size: 100))
-            
-            Text(timeRemaining)
+           
+            Text(viewModel.timeRemaining)
                 .font(.system(size: 72, weight: .bold, design: .monospaced))
             
             Button(action: {
-                isTimerRunning.toggle()
+
+                viewModel.handleToggleButtonTap()
             }) {
-                Text(isTimerRunning ? "Pause" : "Start")
+                Text(viewModel.buttonText)
                     .font(.title2)
                     .fontWeight(.semibold)
                     .frame(width: 200, height: 50)
-                    .background(isTimerRunning ? Color.orange : Color.green)
+                    .background(viewModel.isTimerRunning ? Color.orange : Color.green)
                     .foregroundColor(.white)
                     .cornerRadius(15)
             }
@@ -39,6 +38,7 @@ struct PomodoroTimerView: View {
 }
 
 // MARK: - Preview
+
 struct PomodoroTimerView_Previews: PreviewProvider {
     static var previews: some View {
         PomodoroTimerView()
