@@ -1,0 +1,79 @@
+# Created by https://www.toptal.com/developers/gitignore/api/swift,xcode
+# Edit at https://www.toptal.com/developers/gitignore?templates=swift,xcode
+
+### Swift ###
+.build/
+.swiftpm/
+Packages/
+*.swiftdeps
+*.swiftmodule
+
+### Xcode ###
+# Generated files
+build/
+DerivedData/
+
+# Swift Package Manager
+#
+# We recommend committing Package.resolved to ensure sustainable builds.
+# See https://developer.apple.com/documentation/swift_packages/managing_package_dependencies for more details.
+#
+# Xcode automatically adds a .swiftpm directory to your project workspace.
+# We recommend ignoring it to avoid merge conflicts and issues with staging and unstaging files.
+# For more information, see https://developer.apple.com/forums/thread/656528
+#
+# Package.pins is no longer used and should be ignored.
+Package.pins
+
+# User-specific files
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserdatad
+
+# Local History files
+.xcodesamplecode.plist
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Workspace settings
+xcuserdata/
+
+# Pods (se usarmos no futuro)
+Pods/
+
+# Carthage (se usarmos no futuro)
+Carthage/Build
+Carthage/Checkouts
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# End of https://www.toptal.com/developers/gitignore/api/swift,xcode
